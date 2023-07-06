@@ -1,0 +1,46 @@
+<!--pages/mybase/mybase.wxml-->
+<view class="body">
+    <button type="primary" bindtap="login" wx:if="{{!user}}">授权登录</button>
+    <view wx:else>
+        <!--第一层，个人信息状态-->
+        <view class="gerenxinxi">
+            <image src="{{user.avatarUrl}}" mode="widthFix" class="touxiang" class="left_png"></image>
+            <view class="gerenxinxi_text">
+                <text style="font-size: 32rpx;">{{user.nickName}}</text>
+                <text style="font-size: 24rpx; color: rgba(8, 8, 7, 0.726);">{{gerenqianming}}</text>
+            </view>
+        </view>
+        <!--个人信息下面的线-->
+        <view class="dibuxian"></view>
+        <!--第二层，功能面板-->
+        <view class="gongnengmianban">
+
+            <van-cell title="推荐给好友" is-link size="large" />
+            <van-cell title="联系客服" is-link size="large" />
+            <van-cell title="常见问题" is-link size="large" />
+            <van-cell title="关于我们" is-link size="large" />
+        </view>
+        
+    </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

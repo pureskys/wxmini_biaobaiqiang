@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my_base/my_base",
+    "pages/fabuye/fabuye",
+    "pages/wenan/wenan"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "人文表白墙",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "ico/首页 (1).png",
+      "selectedIconPath": "ico/首页 (3).png"
+    },
+    {
+      "pagePath": "pages/fabuye/fabuye",
+      "text": "",
+      "iconPath": "ico/加号 (1).png",
+      "selectedIconPath": "ico/加号.png"
+  
+    },
+    {
+      "pagePath": "pages/my_base/my_base",
+      "text": "我的",
+      "iconPath": "ico/我的 (1).png",
+      "selectedIconPath": "ico/我的 (3).png"
+    }
+    
+  ]
+},
+"usingComponents":{
+  "l-button":"/miniprogram_npm/lin-ui/button/index",
+  "l-card":"/miniprogram_npm/lin-ui/card/index",
+  "van-field": "@vant/weapp/field/index",
+  "van-search": "@vant/weapp/search/index",
+  "van-button": "@vant/weapp/button/index",
+  "van-cell": "@vant/weapp/cell/index",
+  "van-cell-group": "@vant/weapp/cell-group/index"
+}
+
+
+
+
+}

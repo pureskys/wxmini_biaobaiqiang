@@ -1,0 +1,64 @@
+<!--pages/wenan/wenan.wxml-->
+<!-- 文章详情开始 -->
+<view wx:for="{{data_list}}" wx:key="_id">
+    <l-card type="avatar" l-class="card" image="{{item.touxiang}}" title="{{item.nicheng}}" describe="18个小时前">
+        <!-- 此处为content -->
+        <view class="avter-content">
+            <view class="dibuxian1"></view>
+            <text style="word-break:break-all">{{item.biaobaiwenzhang}}</text>
+
+        </view>
+        <view class="avter-share-container">
+            <!-- <view class="like-container">
+            <l-icon name="like" color="#666" size="28" />
+            <view class="number">160喜欢</view>
+        </view>
+        <view class="like-container">
+            <l-icon name="default" color="#666" size="28" />
+            <view class="number">10评论</view>
+        </view> -->
+        </view>
+        <l-tag shape="circle" bg-color="#f3f3f3" font-color="#3963BC" slot="more">
+            <text style=" font-size: small;color: rgb(104, 101, 101);">被表白人：{{item.beibiaobairen}}</text>
+        </l-tag>
+    </l-card>
+
+</view>
+<view  style="height: 20rpx;"></view>
+<view style="height: 48rpx; font-size: small;margin-left: 35rpx;">评论：{{pinglun_list.length}}</view>
+<view style="width: 100%;background-color: rgb(155, 156, 156);height: 1rpx;margin-bottom: 10rpx;"></view>
+<!-- 文章详情结束 -->
+<!-- 评论数据加载开始 -->
+<view>
+    <view wx:for="{{pinglun_list}}" wx:key="wenzhang">
+        <l-card type="avatar" l-class="card" image="{{item.touxiang}}" title="{{item.nicheng}}" describe="18个小时前">
+            <!-- 此处为content -->
+            <view class="avter-content">
+                <text style="word-break:break-all;font-size: small;">{{item.wenzhang}}</text>
+
+            </view>
+            <view class="avter-share-container">
+            </view>
+            <!-- <l-tag shape="circle" bg-color="#f3f3f3" font-color="#3963BC" slot="more">
+            <text style=" font-size: small;color: rgb(104, 101, 101);">被表白人：{{item.beibiaobairen}}</text>
+        </l-tag> -->
+        </l-card>
+
+    </view>
+    <view style="height: 180rpx;"></view>
+</view>
+<!-- 评论数据加载结束 -->
+<!-- 留言开始 -->
+<view class="pinglun">
+    <van-cell-group inset>
+        <van-cell-group>
+            <van-field maxlength="100" autosize type="textarea" bind:input="liuyankuang" value="{{ sms }}" center clearable label="留言" placeholder="请输入留言" title-width="3em" border="{{ false }}" use-button-slot>
+                <van-button slot="button" size="small" type="primary" bind:click="fabu">
+                    发送
+                </van-button>
+            </van-field>
+        </van-cell-group>
+    </van-cell-group>
+
+</view>
+<!-- 留言结束 -->

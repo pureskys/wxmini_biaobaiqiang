@@ -1,0 +1,30 @@
+<view class="body">
+    <!-- 搜索开始 -->
+    <view class="sousuokuang">
+        <van-search value="{{ sousuo }}" placeholder="请输入被表白人姓名" shape="round" bind:search="onSearch" bind:change="onChange"/>
+    </view>
+    <!-- 搜索结束 -->
+    <!-- 广场开始 -->
+    <view class="tupian" wx:for="{{list}}" wx:key="_id" bindtap="biaobaiwenzhang" data-id="{{item._id}}">
+        <image src="{{item.tupian}}" mode="widthFix"></image>
+        <text>{{item.biaoti}}</text>
+    </view>
+    <!-- 广场结束 -->
+    <!-- 跳转按钮开始 -->
+    <view class="tiaozhuananniu">
+        <button type="primary" bindtap="shangyiye">上一页</button>
+        <button type="primary" bindtap="shouye">回到首页</button>
+        <button type="primary" bindtap="xiayiye">下一页</button>
+
+    </view>
+    <!-- 跳转按钮结束 -->
+    <!-- 最后一页开始 -->
+    <view class="zuihouyiye" wx:if="{{!list}}">
+        已经是最后一页了~~~
+    </view>
+    <!-- 最后一页结束 -->
+    <!-- 测试开始 -->
+   <view>
+   </view>
+    <!-- 测试结束 -->
+</view>

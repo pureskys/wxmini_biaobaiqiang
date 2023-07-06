@@ -1,0 +1,44 @@
+/* pages/wenan/wenan.wxss */
+.biaoti {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10000rpx;
+}
+
+.biaoti text {
+    font-style: normal;
+}
+
+.dibuxian1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(175, 175, 175);
+    height: 1rpx;
+    margin-bottom: 26rpx;
+   
+}
+
+.biaobaiwenzhang {
+    border-color: cadetblue;
+    border-style: dotted;
+    border-radius: 20rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    margin-right: 100rpx;
+    margin-bottom: 20rpx;
+    height: auto;
+}
+
+.biaobaiwenzhang text {
+    margin: 20rpx;
+    word-break: break-all;
+}
+
+.pinglun {
+    width: 100%;
+    position: fixed;
+    bottom: 0rpx;
+    margin-bottom: 20rpx;
+}

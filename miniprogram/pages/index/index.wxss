@@ -1,0 +1,49 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.sousuokuang{
+    width: 100%;
+}
+
+.tupian {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+    margin-right: 10rpx;
+    margin-bottom: 0%;
+    height: 238rpx;
+
+}
+
+.tupian image {
+    width: 100%;
+    height: auto;
+    border-radius: 4%;
+
+}
+
+.tupian text {
+    font-size: 30rpx;
+}
+
+.zuihouyiye {
+    width: 100%;
+    height: 500rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiaozhuananniu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10rpx;
+}

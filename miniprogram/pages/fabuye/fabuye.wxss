@@ -1,0 +1,80 @@
+/* pages/fabuye/fabuye.wxss */
+.biaoti {
+
+    border-radius: 20rpx;
+    margin: 10rpx;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.biaoti input {
+    width: 50%;
+    height: 100%;
+    margin-left: 23rpx;
+}
+
+.dibuxian {
+    display: flex;
+    align-items: center;
+    width: 86%;
+    background-color: rgb(29, 143, 99);
+    height: 6rpx;
+    border-radius: 1000rpx;
+}
+
+.dibuxian1 {
+    display: flex;
+    align-items: center;
+    width: 97%;
+    background-color: rgb(29, 143, 99);
+    height: 6rpx;
+    border-radius: 1000rpx;
+}
+
+.beibiaobairen {
+
+    display: flex;
+    margin: 10rpx;
+    border-radius: 10rpx;
+    height: 100rpx;
+    width: 45%;
+    align-items: center;
+}
+
+.beibiaobairen input {
+    margin-left: 20rpx;
+}
+
+.biaobaiwen {
+    display: flex;
+    border-color: cadetblue;
+    border-style: dotted;
+    border-radius: 20rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    margin-right: 100rpx;
+    margin-bottom: 20rpx;
+    height: 850rpx;
+
+
+}
+
+.biaobaiwen textarea {
+   margin: 20rpx;
+   height: 800rpx;
+
+
+}
+
+.fabiaoanniu {
+    margin-left: 200rpx;
+    margin-right: 200rpx;
+    margin-bottom: 20rpx;
+    color: chartreuse;
+}
+
+.fabiaoanniu button {
+    border-radius: 100rpx;
+}
